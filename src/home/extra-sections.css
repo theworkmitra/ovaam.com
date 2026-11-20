@@ -1,0 +1,413 @@
+
+/* Extra Homepage Sections */
+
+.ovaam-extra-sections {
+    width: 100%;
+    background: #ffffff;
+    color: #07142b;
+}
+
+.ovaam-templates-section,
+.ovaam-how-section {
+    padding: 28px 0;
+    border-bottom: 1px solid #edf0f2;
+}
+
+.ovaam-section-label {
+    color: #68a82a;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+    margin-bottom: 7px;
+}
+
+.ovaam-section-heading {
+    font-size: clamp(23px, 2vw, 30px);
+    line-height: 1.08;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: #07142b;
+}
+
+.ovaam-section-description {
+    color: #293346;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 17px;
+}
+
+.ovaam-explore-btn {
+    background: #a5f000;
+    color: #07142b;
+    font-weight: 700;
+    border-radius: 9px;
+    padding: 11px 18px;
+    font-size: 14px;
+}
+
+.ovaam-explore-btn:hover {
+    background: #91d900;
+    color: #07142b;
+}
+
+.ovaam-explore-btn span {
+    margin-left: 12px;
+}
+
+/* Template Cards */
+
+.ovaam-template-slider {
+    position: relative;
+    padding: 0 12px;
+}
+
+.ovaam-template-card {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #e8ebef;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    color: #07142b;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ovaam-template-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 22px rgba(0, 0, 0, 0.12);
+    color: #07142b;
+}
+
+.ovaam-template-image {
+    width: 100%;
+    aspect-ratio: 1.55 / 1;
+    overflow: hidden;
+    background: #f1f3f5;
+}
+
+.ovaam-template-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ovaam-template-title {
+    min-height: 39px;
+    padding: 9px 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Slider Arrows */
+
+.ovaam-slider-arrow {
+    position: absolute;
+    top: 40%;
+    z-index: 2;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e2e5e9;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #07142b;
+    font-size: 28px;
+    line-height: 1;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.ovaam-slider-arrow:hover {
+    background: #a5f000;
+}
+
+.ovaam-slider-prev {
+    left: -5px;
+}
+
+.ovaam-slider-next {
+    right: -5px;
+}
+
+/* Slider Dots */
+
+.ovaam-slider-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.ovaam-slider-dots button {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: #cbd0d5;
+}
+
+.ovaam-slider-dots button.active {
+    background: #a5f000;
+    box-shadow: 0 0 0 3px rgba(165, 240, 0, 0.15);
+}
+
+/* How It Works */
+
+.ovaam-step-card {
+    height: 100%;
+    min-height: 140px;
+    padding: 12px 10px;
+    border-radius: 15px;
+    background: #f1f7f3;
+    text-align: center;
+}
+
+.ovaam-step-icon {
+    height: 49px;
+    margin-bottom: 8px;
+    color: #326b17;
+}
+
+.ovaam-step-icon svg {
+    width: 48px;
+    height: 48px;
+}
+
+.ovaam-step-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin-bottom: 7px;
+}
+
+.ovaam-step-number {
+    flex: 0 0 29px;
+    width: 29px;
+    height: 29px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #a5f000;
+    color: #07142b;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.ovaam-step-title h3 {
+    margin: 0;
+    color: #07142b;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.ovaam-step-card p {
+    margin: 0;
+    color: #293346;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.ovaam-step-arrow {
+    align-items: center;
+    justify-content: center;
+    color: #07142b;
+    font-size: 27px;
+}
+
+/* Responsive */
+
+@media (max-width: 991.98px) {
+    .ovaam-templates-section,
+    .ovaam-how-section {
+        padding: 35px 0;
+    }
+
+    .ovaam-step-arrow {
+        display: none !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .ovaam-section-heading {
+        font-size: 25px;
+    }
+
+    .ovaam-template-title {
+        font-size: 12px;
+    }
+
+    .ovaam-slider-arrow {
+        width: 32px;
+        height: 32px;
+    }
+
+    .ovaam-step-card {
+        min-height: 150px;
+    }
+}
+
+
+/* =====================================
+   TEMPLATE SECTION ANIMATIONS
+===================================== */
+
+@keyframes ovaamCardReveal {
+    from {
+        opacity: 0;
+        transform: translateY(35px) scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes ovaamIconFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-7px);
+    }
+}
+
+@keyframes ovaamArrowMove {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(7px);
+    }
+}
+
+/* Template Cards */
+.ovaam-template-card {
+    animation: ovaamCardReveal 0.7s ease both;
+}
+
+.ovaam-template-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.ovaam-template-card:hover .ovaam-template-image img {
+    transform: scale(1.08);
+}
+
+.ovaam-template-image img {
+    transition: transform 0.5s ease;
+}
+
+/* Slider Arrows */
+.ovaam-slider-arrow {
+    transition: background 0.25s ease,
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.ovaam-slider-arrow:hover {
+    transform: scale(1.12);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Slider Dots */
+.ovaam-slider-dots button {
+    transition: width 0.3s ease, background 0.3s ease;
+}
+
+.ovaam-slider-dots button.active {
+    width: 22px;
+    border-radius: 10px;
+}
+
+/* How It Works Cards */
+.ovaam-step-card {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.ovaam-step-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(20, 60, 20, 0.10);
+}
+
+.ovaam-step-icon {
+    animation: ovaamIconFloat 4s ease-in-out infinite;
+}
+
+.ovaam-step-arrow {
+    animation: ovaamArrowMove 2s ease-in-out infinite;
+}
+
+.ovaam-step-number {
+    transition: transform 0.3s ease;
+}
+
+.ovaam-step-card:hover .ovaam-step-number {
+    transform: scale(1.15);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .ovaam-extra-sections *,
+    .ovaam-extra-sections *::before,
+    .ovaam-extra-sections *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+
+/* =====================================
+   SCROLL REVEAL ANIMATION
+===================================== */
+
+[data-reveal] {
+    opacity: 0;
+    transform: translateY(45px);
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+[data-reveal].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Different reveal directions */
+.ovaam-template-card[data-reveal] {
+    transform: translateY(45px) scale(0.96);
+}
+
+.ovaam-template-card[data-reveal].is-visible {
+    transform: translateY(0) scale(1);
+}
+
+/* Step cards */
+.ovaam-step-card[data-reveal] {
+    transform: translateY(45px);
+    transition-delay: 0.1s;
+}
+
+.ovaam-step-card[data-reveal].is-visible {
+    transform: translateY(0);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    [data-reveal],
+    [data-reveal].is-visible {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}

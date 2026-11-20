@@ -1,0 +1,919 @@
+.ovaam-home {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    color: #07152c;
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ovaam-navbar {
+    min-height: 73px;
+    padding: 8px 4.8%;
+    background: #fff;
+    border: 1px solid #d9dce2;
+    position: relative;
+    z-index: 10;
+}
+
+.ovaam-nav-container { max-width: 1600px; margin: 0 auto; }
+.ovaam-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: #07152c !important;
+    font-size: 29px;
+    font-weight: 800;
+    letter-spacing: -1.8px;
+}
+.ovaam-brand img { width: 54px; height: 48px; object-fit: contain; }
+.ovaam-brand span { line-height: 1; }
+.ovaam-menu { align-items: center; gap: clamp(12px, 2vw, 34px); }
+.ovaam-menu .nav-link {
+    color: #101522;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 2px !important;
+    white-space: nowrap;
+}
+.ovaam-menu .nav-link:hover, .ovaam-menu .nav-link.active { color: #07152c; }
+.ovaam-chevron { margin-left: 3px; font-size: 16px; }
+.ovaam-nav-actions { display: flex; align-items: center; gap: 13px; }
+.ovaam-login-btn, .ovaam-start-btn {
+    min-height: 42px;
+    padding: 9px 25px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.ovaam-login-btn { color: #101522; border: 1.5px solid #89909b; background: #fff; }
+.ovaam-login-btn:hover { background: #f3f5f7; border-color: #263247; }
+.ovaam-start-btn { color: #081321; background: #b7ff00; border: 1px solid #a9ed00; box-shadow: 0 2px 8px rgba(183,255,0,.18); }
+.ovaam-start-btn:hover, .ovaam-primary-cta:hover { color: #07152c; background: #a8eb00; }
+.ovaam-toggler { border-color: #7c8796; }
+.ovaam-toggler:focus { box-shadow: none; }
+
+.ovaam-hero {
+    position: relative;
+    min-height: 465px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: radial-gradient(ellipse at 68% 44%, #0b3158 0, #061c39 42%, #03142d 78%);
+    color: #fff;
+}
+.ovaam-hero-container { max-width: 1600px; padding: 38px 6.3% 30px; position: relative; z-index: 2; }
+.ovaam-hero-copy { position: relative; z-index: 3; padding-top: 4px; }
+.ovaam-eyebrow {
+    margin-bottom: 12px;
+    color: #d7ff00;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.ovaam-hero-copy h1 {
+    margin: 0 0 13px;
+    color: #fff;
+    font-size: clamp(32px, 3.15vw, 49px);
+    line-height: 1.06;
+    letter-spacing: -1.6px;
+    font-weight: 800;
+}
+.ovaam-hero-copy h1 span { color: #b8ff00; }
+.ovaam-hero-description {
+    max-width: 620px;
+    margin: 0;
+    color: #f1f4f8;
+    font-size: clamp(15px, 1.3vw, 19px);
+    line-height: 1.42;
+    font-weight: 400;
+}
+.ovaam-hero-actions { display: flex; align-items: center; gap: 23px; margin-top: 22px; }
+.ovaam-primary-cta, .ovaam-outline-cta {
+    min-height: 52px;
+    padding: 13px 31px;
+    border-radius: 13px;
+    font-size: 16px;
+    font-weight: 800;
+}
+.ovaam-primary-cta { color: #07152c; background: #b7ff00; border: 1px solid #b7ff00; }
+.ovaam-primary-cta span { margin-left: 10px; font-size: 22px; line-height: 0; }
+.ovaam-outline-cta { color: #fff; border: 2px solid #dce5f2; background: transparent; text-decoration: none; }
+.ovaam-outline-cta:hover { color: #07152c; background: #fff; }
+.ovaam-benefits { display: flex; flex-wrap: wrap; gap: 13px 26px; margin-top: 25px; }
+.ovaam-benefits span { color: #fff; font-size: 14px; font-weight: 600; white-space: nowrap; }
+.ovaam-benefits b { color: #c7ff00; font-size: 23px; margin-right: 7px; vertical-align: -2px; }
+
+.ovaam-hero-visual { min-height: 365px; position: relative; display: flex; align-items: center; justify-content: center; padding: 24px 0 10px; }
+.ovaam-lime-swoosh {
+    position: absolute;
+    width: 112%;
+    height: 190px;
+    right: -23%;
+    top: -9px;
+    border-top: 21px solid #b7ff00;
+    border-radius: 52% 50% 0 0;
+    transform: rotate(-8deg);
+    filter: drop-shadow(0 0 8px rgba(183,255,0,.2));
+}
+.ovaam-laptop {
+    position: relative;
+    z-index: 2;
+    width: min(88%, 590px);
+    margin: 20px 32px 0 0;
+    padding: 10px 10px 0;
+    border: 3px solid #65758a;
+    border-bottom: 0;
+    border-radius: 17px 17px 5px 5px;
+    background: linear-gradient(135deg, #26364c, #080f1d 50%, #41516a);
+    box-shadow: 0 18px 35px rgba(0,0,0,.45);
+}
+.ovaam-laptop-camera { position: absolute; width: 5px; height: 5px; border-radius: 50%; background: #8193a8; top: 3px; left: 50%; }
+.ovaam-laptop-screen { height: 265px; overflow: hidden; background: #f4f1e9; border: 2px solid #111b2a; border-radius: 8px 8px 2px 2px; }
+.ovaam-editor-topbar { height: 39px; display: flex; align-items: center; justify-content: space-between; padding: 0 13px; color: #f6f8fb; background: #111b2b; font-size: 11px; }
+.ovaam-editor-topbar strong { font-size: 13px; letter-spacing: -.4px; }
+.ovaam-editor-topbar strong i { display: inline-block; width: 13px; height: 13px; border: 2px solid #fff; border-radius: 50%; vertical-align: -2px; margin-right: 3px; }
+.ovaam-editor-tools { display: flex; gap: 12px; margin-left: auto; margin-right: 25px; color: #a9b6c6; }
+.ovaam-editor-topbar button { border: 0; border-radius: 5px; background: #b7ff00; color: #101b2b; font-size: 10px; font-weight: 800; padding: 6px 14px; }
+.ovaam-editor-body { display: flex; height: calc(100% - 39px); }
+.ovaam-editor-sidebar { width: 52px; flex: 0 0 52px; display: flex; flex-direction: column; justify-content: space-around; align-items: center; color: #b8c3d0; background: #172438; font-size: 17px; }
+.ovaam-store-preview { flex: 1; padding: 15px; background: #e9e5dc; }
+.ovaam-selection { height: 100%; display: flex; align-items: center; border: 2px dashed #5d9af2; background: #f8f5ee; position: relative; overflow: hidden; }
+.ovaam-store-copy { width: 47%; padding-left: 8%; position: relative; z-index: 2; color: #101827; }
+.ovaam-store-copy h2 { margin: 0 0 8px; color: #101827; font-size: clamp(20px, 2vw, 31px); font-weight: 800; line-height: .98; letter-spacing: -1px; }
+.ovaam-store-copy p { max-width: 150px; margin: 0 0 12px; color: #39404b; font-size: 10px; line-height: 1.35; }
+.ovaam-store-copy button { border: 0; border-radius: 4px; padding: 7px 12px; background: #b7ff00; color: #101827; font-size: 9px; font-weight: 800; }
+.ovaam-room-art { position: relative; flex: 1; height: 100%; background: linear-gradient(110deg, #f2eee6, #d9d2c4); }
+.ovaam-plant { position: absolute; right: 9%; top: 6%; color: #47784d; font-size: 68px; transform: rotate(-12deg); }
+.ovaam-lamp { position: absolute; width: 3px; height: 47px; top: 0; left: 48%; background: #252a31; }
+.ovaam-lamp:after { content: ""; position: absolute; left: -20px; bottom: -8px; width: 43px; height: 20px; border-radius: 50% 50% 7px 7px; background: #353b42; }
+.ovaam-sofa { position: absolute; left: 8%; right: 13%; bottom: 13%; height: 63px; border-radius: 28px 28px 9px 9px; background: #d9c9b5; box-shadow: inset 0 -9px 0 #c6b49f; }
+.ovaam-sofa:before, .ovaam-sofa:after { content: ""; position: absolute; bottom: -8px; width: 6px; height: 17px; background: #5b5146; }
+.ovaam-sofa:before { left: 15px; }.ovaam-sofa:after { right: 15px; }
+.ovaam-sofa i, .ovaam-sofa b, .ovaam-sofa em { position: absolute; top: 8px; width: 30%; height: 34px; border-radius: 15px; background: #e8dccb; }
+.ovaam-sofa i { left: 5%; }.ovaam-sofa b { left: 36%; }.ovaam-sofa em { right: 5%; }
+.ovaam-laptop-base { height: 13px; margin: 0 -22px; border-radius: 0 0 50% 50%; background: linear-gradient(#9aa7b6, #4e5d6e 55%, #172235); box-shadow: 0 7px 12px rgba(0,0,0,.35); }
+.ovaam-phone {
+    position: absolute;
+    z-index: 4;
+    width: 145px;
+    height: 285px;
+    right: 1%;
+    bottom: 0;
+    padding: 13px 9px 10px;
+    border: 5px solid #1a2638;
+    border-radius: 29px;
+    background: #fff;
+    color: #111827;
+    box-shadow: 0 12px 28px rgba(0,0,0,.45), inset 0 0 0 1px #7d8da0;
+}
+.ovaam-phone-speaker { position: absolute; top: 5px; left: 50%; width: 36px; height: 4px; border-radius: 5px; background: #344154; transform: translateX(-50%); }
+.ovaam-phone-top { display: flex; justify-content: space-between; margin: 7px 2px 9px; font-size: 10px; }
+.ovaam-phone-room { height: 105px; position: relative; overflow: hidden; background: linear-gradient(120deg, #f1eee7, #d8d2c7); }
+.ovaam-phone-plant { position: absolute; top: 2px; right: 7px; color: #47784d; font-size: 45px; }
+.ovaam-phone-chair { position: absolute; width: 55px; height: 40px; left: 20px; bottom: 8px; border-radius: 20px 20px 7px 7px; background: #d9c9b5; box-shadow: inset 0 -5px #b9a991; }
+.ovaam-phone h3 { margin: 10px 0 7px; color: #101827; font-size: 16px; line-height: 1; font-weight: 800; }
+.ovaam-phone > button { border: 0; border-radius: 4px; padding: 6px 10px; background: #b7ff00; color: #101827; font-size: 8px; font-weight: 800; }
+.ovaam-phone-categories { display: flex; justify-content: space-between; margin-top: 10px; text-align: center; font-size: 12px; }
+.ovaam-phone-categories span { display: flex; flex-direction: column; align-items: center; }
+.ovaam-phone-categories small { font-size: 7px; }
+.ovaam-anchor { height: 1px; }
+
+@media (max-width: 1199.98px) {
+    .ovaam-navbar { padding-left: 3%; padding-right: 3%; }
+    .ovaam-menu { gap: 13px; }
+    .ovaam-menu .nav-link { font-size: 13px; }
+    .ovaam-nav-actions { gap: 8px; }
+    .ovaam-login-btn, .ovaam-start-btn { padding-left: 16px; padding-right: 16px; }
+    .ovaam-hero-container { padding-left: 4%; padding-right: 4%; }
+    .ovaam-phone { right: -1%; transform: scale(.9); transform-origin: bottom right; }
+}
+@media (max-width: 991.98px) {
+    .ovaam-navbar { min-height: 68px; }
+    .ovaam-nav-collapse { padding: 12px 0 8px; }
+    .ovaam-menu { align-items: stretch; gap: 0; }
+    .ovaam-menu .nav-link { padding: 9px 4px !important; }
+    .ovaam-nav-actions { padding-top: 10px; }
+    .ovaam-hero { min-height: auto; }
+    .ovaam-hero-container { padding: 48px 6% 32px; }
+    .ovaam-hero-copy h1 { font-size: clamp(34px, 6vw, 48px); }
+    .ovaam-hero-visual { min-height: 370px; margin-top: 5px; }
+    .ovaam-laptop { width: min(82%, 590px); margin-right: 35px; }
+    .ovaam-phone { right: 4%; }
+}
+@media (max-width: 575.98px) {
+    .ovaam-brand { font-size: 25px; }
+    .ovaam-brand img { width: 45px; height: 42px; }
+    .ovaam-hero-container { padding: 38px 20px 25px; }
+    .ovaam-eyebrow { font-size: 13px; letter-spacing: 1.5px; }
+    .ovaam-hero-copy h1 { font-size: 34px; letter-spacing: -1px; }
+    .ovaam-hero-description { font-size: 15px; }
+    .ovaam-hero-actions { gap: 10px; flex-wrap: wrap; }
+    .ovaam-primary-cta, .ovaam-outline-cta { min-height: 47px; padding: 11px 17px; font-size: 14px; }
+    .ovaam-benefits { gap: 7px 14px; margin-top: 20px; }
+    .ovaam-benefits span { font-size: 11px; }
+    .ovaam-benefits b { font-size: 17px; margin-right: 4px; }
+    .ovaam-hero-visual { min-height: 265px; padding-top: 10px; }
+    .ovaam-laptop { width: 88%; margin: 12px 18px 0 0; padding: 6px 6px 0; border-width: 2px; }
+    .ovaam-laptop-screen { height: 175px; }
+    .ovaam-editor-topbar { height: 27px; padding: 0 7px; font-size: 8px; }
+    .ovaam-editor-topbar strong { font-size: 9px; }
+    .ovaam-editor-topbar button { padding: 4px 8px; font-size: 7px; }
+    .ovaam-editor-body { height: calc(100% - 27px); }
+    .ovaam-editor-sidebar { width: 30px; flex-basis: 30px; font-size: 12px; }
+    .ovaam-store-preview { padding: 8px; }
+    .ovaam-store-copy { padding-left: 5%; }
+    .ovaam-store-copy h2 { font-size: 18px; }
+    .ovaam-store-copy p { font-size: 7px; margin-bottom: 6px; }
+    .ovaam-store-copy button { padding: 5px 7px; font-size: 7px; }
+    .ovaam-plant { font-size: 42px; }
+    .ovaam-sofa { height: 38px; }
+    .ovaam-phone { width: 92px; height: 190px; right: 0; padding: 9px 6px 6px; border-width: 4px; border-radius: 20px; }
+    .ovaam-phone-top { margin: 5px 1px; font-size: 7px; }
+    .ovaam-phone-room { height: 65px; }
+    .ovaam-phone-plant { font-size: 29px; }
+    .ovaam-phone-chair { width: 35px; height: 26px; left: 12px; }
+    .ovaam-phone h3 { margin: 6px 0 5px; font-size: 11px; }
+    .ovaam-phone > button { padding: 4px 6px; font-size: 6px; }
+    .ovaam-phone-categories { margin-top: 5px; font-size: 8px; }
+    .ovaam-phone-categories small { font-size: 5px; }
+}
+
+/* Mobile Hamburger */
+.ovaam-hamburger {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 8px;
+}
+
+.ovaam-hamburger span {
+    width: 21px;
+    height: 2px;
+    background: #101828;
+    border-radius: 5px;
+}
+
+/* Drawer */
+.ovaam-drawer-wrapper {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+}
+
+.ovaam-drawer-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 15, 35, 0.58);
+}
+
+.ovaam-drawer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: min(390px, 88%);
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 0 35px rgba(0, 0, 0, 0.15);
+    animation: ovaamDrawerIn 0.3s ease forwards;
+}
+
+@keyframes ovaamDrawerIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Drawer Header */
+.ovaam-drawer-header {
+    min-height: 76px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #edf0f2;
+}
+
+.ovaam-drawer-brand {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #101828;
+    font-size: 23px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.ovaam-drawer-brand img {
+    max-width: 42px;
+    max-height: 42px;
+    object-fit: contain;
+}
+
+.ovaam-drawer-close {
+    width: 38px;
+    height: 38px;
+    border: 0;
+    border-radius: 50%;
+    background: #f1f3f5;
+    color: #172033;
+    font-size: 29px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* Drawer Links */
+.ovaam-drawer-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px 20px;
+}
+
+.ovaam-drawer-link {
+    width: 100%;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 4px;
+    border: 0;
+    border-bottom: 1px solid #edf0f2;
+    background: transparent;
+    color: #172033;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ovaam-drawer-link:hover,
+.ovaam-drawer-link.active {
+    color: #70a927;
+}
+
+.ovaam-submenu-arrow {
+    font-size: 21px;
+    transition: transform 0.25s ease;
+}
+
+.ovaam-submenu-arrow.rotated {
+    transform: rotate(180deg);
+}
+
+/* Submenu */
+.ovaam-submenu {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 0 10px 17px;
+    background: #f8fafc;
+    border-bottom: 1px solid #edf0f2;
+}
+
+.ovaam-submenu a {
+    padding: 10px 12px;
+    color: #596579;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+
+.ovaam-submenu a:hover {
+    color: #60951e;
+    background: #edf5e5;
+}
+
+/* Drawer Footer */
+.ovaam-drawer-footer {
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid #edf0f2;
+}
+
+.ovaam-drawer-login,
+.ovaam-drawer-start {
+    width: 100%;
+    min-height: 46px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.ovaam-drawer-login {
+    color: #172033;
+    background: #ffffff;
+    border: 1px solid #dce1e7;
+}
+
+.ovaam-drawer-start {
+    color: #ffffff;
+    background: #80b936;
+    border: 1px solid #80b936;
+}
+
+.ovaam-drawer-start:hover {
+    color: #ffffff;
+    background: #6d9f2c;
+}
+
+/* =====================================
+   OVAAM NAVIGATION
+===================================== */
+
+.ovaam-navbar {
+    position: relative;
+    z-index: 1000;
+    background: #ffffff;
+}
+
+.ovaam-desktop-nav {
+    flex: 1;
+    align-items: center;
+}
+
+.ovaam-menu {
+    align-items: center;
+}
+
+.ovaam-menu .nav-link {
+    color: #080d19;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 12px 13px;
+}
+
+.ovaam-menu .nav-link:hover,
+.ovaam-menu .nav-link.active {
+    color: #75b52d;
+}
+
+/* =====================================
+   DESKTOP DROPDOWN
+===================================== */
+
+.ovaam-desktop-dropdown {
+    position: relative;
+}
+
+.ovaam-desktop-dropdown-toggle {
+    border: 0;
+    background: transparent;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.ovaam-chevron {
+    display: inline-block;
+    margin-left: 6px;
+    font-size: 17px;
+}
+
+.ovaam-desktop-submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 245px;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #edf0f2;
+    border-radius: 12px;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.13);
+    display: none;
+    flex-direction: column;
+    z-index: 1100;
+}
+
+.ovaam-desktop-dropdown:hover .ovaam-desktop-submenu,
+.ovaam-desktop-dropdown:focus-within .ovaam-desktop-submenu {
+    display: flex;
+}
+
+.ovaam-desktop-submenu a {
+    display: block;
+    padding: 12px 13px;
+    color: #172033;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: 0.2s ease;
+}
+
+.ovaam-desktop-submenu a:hover {
+    color: #60951e;
+    background: #edf5e5;
+}
+
+/* =====================================
+   MOBILE HAMBURGER
+===================================== */
+
+.ovaam-hamburger {
+    width: 44px;
+    height: 44px;
+    padding: 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.ovaam-hamburger span {
+    width: 21px;
+    height: 2px;
+    background: #101828;
+    border-radius: 5px;
+}
+
+/* =====================================
+   MOBILE DRAWER
+===================================== */
+
+.ovaam-drawer-wrapper {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+}
+
+.ovaam-drawer-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 15, 35, 0.58);
+}
+
+.ovaam-drawer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: min(390px, 88%);
+    height: 100%;
+    height: 100dvh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 0 35px rgba(0, 0, 0, 0.15);
+    animation: ovaamDrawerIn 0.3s ease forwards;
+}
+
+@keyframes ovaamDrawerIn {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Drawer Header */
+
+.ovaam-drawer-header {
+    min-height: 76px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #edf0f2;
+}
+
+.ovaam-drawer-brand {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #101828;
+    font-size: 23px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.ovaam-drawer-brand img {
+    max-width: 42px;
+    max-height: 42px;
+    object-fit: contain;
+}
+
+.ovaam-drawer-close {
+    width: 38px;
+    height: 38px;
+    border: 0;
+    border-radius: 50%;
+    background: #f1f3f5;
+    color: #172033;
+    font-size: 29px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* Drawer Body */
+
+.ovaam-drawer-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px 20px;
+}
+
+.ovaam-drawer-link {
+    width: 100%;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 4px;
+    border: 0;
+    border-bottom: 1px solid #edf0f2;
+    background: transparent;
+    color: #172033;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ovaam-drawer-link:hover,
+.ovaam-drawer-link.active {
+    color: #70a927;
+}
+
+/* Mobile Submenu */
+
+.ovaam-submenu-arrow {
+    font-size: 21px;
+    transition: transform 0.25s ease;
+}
+
+.ovaam-submenu-arrow.rotated {
+    transform: rotate(180deg);
+}
+
+.ovaam-submenu {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 0 10px 17px;
+    background: #f8fafc;
+    border-bottom: 1px solid #edf0f2;
+}
+
+.ovaam-submenu a {
+    display: block;
+    padding: 10px 12px;
+    color: #596579;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+
+.ovaam-submenu a:hover {
+    color: #60951e;
+    background: #edf5e5;
+}
+
+/* Drawer Footer */
+
+.ovaam-drawer-footer {
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid #edf0f2;
+}
+
+.ovaam-drawer-login,
+.ovaam-drawer-start {
+    width: 100%;
+    min-height: 46px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.ovaam-drawer-login {
+    color: #172033;
+    background: #ffffff;
+    border: 1px solid #dce1e7;
+}
+
+.ovaam-drawer-start {
+    color: #ffffff;
+    background: #80b936;
+    border: 1px solid #80b936;
+}
+
+.ovaam-drawer-start:hover {
+    color: #ffffff;
+    background: #6d9f2c;
+}
+
+/* Navbar Dropdown Visible */
+.ovaam-navbar,
+.ovaam-nav-container,
+.ovaam-desktop-nav {
+    overflow: visible;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .ovaam-desktop-nav {
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .ovaam-drawer-wrapper {
+        display: none;
+    }
+}
+
+/* Full Screen Homepage */
+.ovaam-home {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.ovaam-hero {
+    min-height: calc(100vh - 82px);
+    display: flex;
+    align-items: center;
+}
+
+.ovaam-hero-container {
+    width: 100%;
+}
+
+@media (max-width: 991.98px) {
+    .ovaam-hero {
+        min-height: calc(100vh - 70px);
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+}
+
+
+/* =====================================
+   OVAAM HERO ANIMATIONS
+===================================== */
+
+@keyframes ovaamFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes ovaamFadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(-45px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes ovaamFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-14px);
+    }
+}
+
+@keyframes ovaamGlow {
+    0%, 100% {
+        opacity: 0.65;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.08);
+    }
+}
+
+@keyframes ovaamSwoosh {
+    from {
+        transform: translateX(80px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Hero Text */
+.ovaam-eyebrow {
+    animation: ovaamFadeUp 0.7s ease both;
+}
+
+.ovaam-hero-copy h1 {
+    animation: ovaamFadeUp 0.9s ease 0.1s both;
+}
+
+.ovaam-hero-description {
+    animation: ovaamFadeUp 0.9s ease 0.25s both;
+}
+
+.ovaam-hero-actions {
+    animation: ovaamFadeUp 0.9s ease 0.4s both;
+}
+
+.ovaam-benefits {
+    animation: ovaamFadeUp 0.9s ease 0.55s both;
+}
+
+/* Laptop and Phone */
+.ovaam-laptop {
+    animation: ovaamFadeUp 1s ease 0.25s both;
+}
+
+.ovaam-phone {
+    animation: ovaamFadeUp 1s ease 0.55s both,
+               ovaamFloat 5s ease-in-out 1.5s infinite;
+}
+
+.ovaam-lime-swoosh {
+    animation: ovaamSwoosh 1.2s ease both,
+               ovaamGlow 5s ease-in-out 1.2s infinite;
+}
+
+.ovaam-hero-glow {
+    animation: ovaamGlow 6s ease-in-out infinite;
+}
+
+/* Buttons */
+.ovaam-primary-cta,
+.ovaam-start-btn,
+.ovaam-explore-btn {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ovaam-primary-cta:hover,
+.ovaam-start-btn:hover,
+.ovaam-explore-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(165, 240, 0, 0.25);
+}
+
+/* Navigation */
+.ovaam-menu .nav-link {
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.ovaam-menu .nav-link:hover {
+    transform: translateY(-2px);
+}
+
+/* Mobile Drawer */
+.ovaam-drawer {
+    will-change: transform;
+}
+
+.ovaam-drawer-link {
+    transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.ovaam-drawer-link:hover {
+    padding-left: 10px;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .ovaam-home *,
+    .ovaam-home *::before,
+    .ovaam-home *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
