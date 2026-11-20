@@ -56,13 +56,12 @@ export default function HomePage({ onLogin }) {
 
                     <a className="navbar-brand ovaam-brand" href="#home">
                         <img
-                            src="/ovaam-logo.png"
+                            src="public/logooo.png"
                             alt="OVAAM"
                             onError={(event) => {
-                                event.currentTarget.style.display = "none";
+                                event.currentTarget.style.display = "";
                             }}
                         />
-                        <span>OVAAM</span>
                     </a>
 
                     {/* DESKTOP NAVIGATION */}
