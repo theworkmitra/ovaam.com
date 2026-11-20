@@ -56,7 +56,7 @@ export default function HomePage({ onLogin }) {
 
                     <a className="navbar-brand ovaam-brand" href="#home">
                         <img
-                            src="public/logooo.png"
+                            src="https://ik.imagekit.io/0fw9yuy2p/logooo.png"
                             alt="OVAAM"
                             onError={(event) => {
                                 event.currentTarget.style.display = "";
